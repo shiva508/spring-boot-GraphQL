@@ -1,0 +1,17 @@
+schema{
+query:Query
+}
+
+
+type Query{
+getAllStudents:[Student]
+findStudent(address:String):Student
+}
+
+type Student{
+id:String
+name:String
+passportNumber:String
+address:String
+
+}
